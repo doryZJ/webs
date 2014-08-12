@@ -1,0 +1,92 @@
+*{margin: 0px;padding: 0px}
+img{border:0}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+
+body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
+.header-bar{width: 100%;min-width: 1000px;height: 54px;background-color: #000;color: #6e6e6e;}
+.headleft{width:500px ;height: 54px;float: left;padding-left: 20px}
+.headlcon{height: 54px;width: 300px;margin-left: 20px;display: inline-block;float: left;}
+.headllink{color:#6e6e6e;font-size: 14px;display: inline-block;height: 54px;line-height: 54px;display: inline-block;}
+.headlpic{background-image: url("images/button-17795f92ca8e8b7cb702e5bb9bf081d0.gif");width: 16px;height: 16px;display: inline-block;border:1px solid #545454;background-repeat: no-repeat;margin-top: 17px;float: left;}
+.headline{font-size: 14px;color: #6e6e6e}
+.headright{width: 270px;height: 52px;float: right;}
+.headrpic{background-image: url("images/themeforest-purchasethis-71f56a79736ebb0f4a4d6b7dacb7cf80.png");width: 270px;height: 52px;display: block;}
+
+/*<!-- 幻灯片 -->*/
+.slider{width: 100%;height: 500px;background-image: url("images/1.jpg");display: block;}
+/*<!-- 导航栏 -->*/
+.logoblock{width: 100%;height: 34px;padding: 15px 0 15px 0;border-bottom: 2px solid #041e34; }
+.logocontain{width: 1170px;height: 34px;margin: 0 auto;}
+.logopic{width: 140px;height: 34px;display: block;float: left;cursor: pointer;}
+.logomenu{width: 550px;height: 34px;float: right;}
+.logomli{padding-right: 35px;height: 34px;line-height: 34px;float: left;}
+.logolilink{height: 20px;padding-bottom: 8px;color:#454545;font-size:18px;line-height: 20px;font-weight: bold;font-family: HelveticaNeueLTProRoman, sans-serif;letter-spacing: 1px;background-color: transparent!important;transition: all 0.2s ease-in;}
+
+/*<!-- about cloud9 -->*/
+.about{width: 100%;height: 800px;background-color: #29343D}
+.abouttitle{width: 1170px;height: 70px;padding: 50px 0 50px 0;margin: 0 auto;}
+.aboutle{width: 10%;height: 2px;background-color: #6d6d6d;border-radius: 1px;box-shadow: 1px 1px rgba(0,0,0,.5);display: inline-block;;margin-top: 32px;float: left;}
+.aboutri{width: 10%;height: 2px;background-color: #6d6d6d;border-radius: 1px;box-shadow: 1px 1px rgba(0,0,0,.5);display: inline-block;;margin-top: 32px;float: right;}
+.aboutmi{width: 936px;height: 71px;float: left;line-height: 30px;font-size: 60px;text-align: center;color: #fff;}
+.aboutsup{font-size: 40px;color: #cf5631;margin-left: -10px}
+.aboutbox{width: 1170px;height: 475px;margin: 0 auto}
+.aboutteam{width: 270px;height: 475px;margin-left: 30px;float: left;}
+.aboutteam1{margin-left: 0px;}
+.abouttpic{width: 273px;height: 273px;background-position: center;background-repeat: no-repeat;border-radius: 50%;margin-bottom: 20px;display: block;background-size: cover;opacity:0.5;}
+.aboutttitle{width: 270px;height: 37px;padding-bottom: 10px;display: block;text-align: center;line-height: 37px;font-size: 28px;color: #52697a;text-transform: uppercase;font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif;}
+.aboutdesc{width: 270px;height: 84px;color: #fff;font-size: 14px;text-align: center;display: block;line-height: 20px}
+.abouttpic1{background-image: url("images/about1.jpg");}
+.abouttpic2{background-image: url("images/about2.jpg");}
+.abouttpic3{background-image: url("images/about3.jpg");}
+.abouttpic4{background-image: url("images/about4.jpg");}
+.aboutbom{width: 220px;height: 35px;text-align: center;padding: 0px 0 0 80px;margin-top: 20px}
+.abouytspic{width: 35px;height: 35px;border-radius: 50%;background-color: #1c252c;margin-right: 8px;display: block;float: left;}
+.abouytspic1{background-image: url("images/tfb.png");background-repeat: no-repeat;background-position: center;}
+.abouytspic2{background-image: url("images/ttw.png");background-repeat: no-repeat;background-position: center;}
+.abouytspic3{background-image: url("images/tgplus.png");background-repeat: no-repeat;background-position: center;}
+
+
+/*	<!-- 底端 -->*/
+.footer{width: 100%;height: 280px;padding: 50px 0;background-image: url("images/footer.jpg");background-repeat:repeat;}
+.footwarp{width: 1000px;height: 280px;margin: 0 auto;}
+.foottop{width: 1000px;height: 200px;float: left;}
+.footerone{width: 484px;height: auto;float: left;}
+.footonetop{width: 484px;height: 186px;}
+.footonetl{width: 221px;margin-right: 20px;height: auto;float: left;}
+.foottitle{width: 221px;height: 21px;margin-bottom: 15px;color:#eee;font-family:  'Trebuchet Ms';font-weight: bold;font-size: 21px;display: block;}
+.foot1con{color:  #867f72;font-size: 13px;line-height: 25px;font-family: 'Droid Sans', sans-serif;}
+.foot1li{height: 45px;width: 221px;margin-bottom: 15px;}
+.footliimg{display: block;float: left;width: 29px;height: 28px;padding: 7px 10px 10px;margin-right: 5px;opacity: 0.7;}
+.foot1txt{width: 165px;height: 45px;float: left;}
+.toot1txt1{color: #867f72;font-size: 13px;font-family:'Droid Sans', sans-serif;line-height: 18px; display: block;}
+.toot1txt2{color: #ddd;font-size: 13px;line-height: 22px;}
+.one_fourth{width: 221px;height: auto;margin-right: 20px;float: left;}
+.footlaul{width: 221px;height: 165px;border-top: 1px dashed #0b0b0b;border-bottom: 1px dashed #3a3a3a;}
+.footlaul li{width: 221px;height: 25px;padding: 3px 0;border-top: 1px dashed #3a3a3a;border-bottom: 1px dashed #0b0b0b;background-image: url("images/footer-icon.png");list-style-position: inside;float: left;background-repeat: no-repeat;background-position: 0 10px;line-height: 25px;}
+.footlaul li a{color:#867f72;font-size: 13px;font-family:'Droid Sans', sans-serif;padding-left: 15px }
+.footbottom{width: 1000px;height:67px;margin: 10px auto;float: left;}
+.footbomwarp{width: 600px;margin: auto;}
+.footbomlink{padding-right: 20px}
+.footbomanimate{
+	animation:animationFrames linear 0.5s;
+	 animation-iteration-count: 1;
+	 transform-origin: ;
+  	animation-fill-mode:none;
+  	 -webkit-animation: animationFrames linear 0.5s;
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-transform-origin: ;
+	  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+}
+@-webkit-keyframes animationFrames {
+  0% {
+    ;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  rotate(360deg) scaleX(1) scaleY(1) ;
+  }
+}
