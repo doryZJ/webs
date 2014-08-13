@@ -5,10 +5,99 @@ a{text-decoration: none;}
 
 body{ font-family: Arial,sans-serif;font-size: 12px}
 /*<!-- 顶部导航栏 -->*/
-#header{width: 100%;height: 40px;background: url("images/dark_header.png");background-repeat: repeat-x;}
-.headerbox{width: 1100px;height: 100%;margin: 0 auto;}
+#header{width: 100%;height: 40px;background: url("images/dark_header.png");background-repeat: repeat-x;min-width: 1000px;}
+.headerbox{width: 1150px;height: 100%;margin: 0 auto;}
 .headerleft{width: 400px;height: 100%;float: left;}
 .headerli{height: 100%;width: auto;float: left;padding: 0 14px;}
 .headerllink{height: 100%;color: #FFFFFF;font-size: 13px;height: 40px;line-height: 40px;display: inline-block;text-shadow: 0 -1px 0 #3D4146;text-align: center;font-weight: bold;}
-.hesdermiddle{width: 470px;height: 40px;float: left;padding-left: 100px}
-.headerlogo{width: 108px;height: 25px;background: url("images/logo.png");display: inline-block;background-repeat: no-repeat;margin-top: 5px}
+.headermiddle{width: 420px;height: 40px;float: left;padding-left: 100px}
+.headerlogo{width: 108px;height: 25px;background: url("images/logo.png");display: inline-block;background-repeat: no-repeat;margin-top: 5px;float: left;}
+.headersearch{width: 250px;float: left;height: 25px;margin-top: 7px;padding-left: 50px;}
+.headersleft{width: 200px;background-color:  #8C9197;border-radius: 12px;border: 0px;height: 25px;position: relative;float: left;}
+.headsinput{width: 164px;height: 25px;color: #C6C6C6;background-color:#8C9197;border-radius: 12px;border: 0px;height: 25px;float: left;margin-left: 10px;}
+.headrandom{width: 21px;height: 20px;margin: 3px 0 0 14px;background-image: url("images/random_profile.png");display: block;float: left; }
+
+.headerright{width: 210px;height: 100%;float: right;}
+.headerrul{width: 210px;height: 100%;}
+.searchtxt{position: absolute;left: 10px; color: #C2C6C3;padding-top: 5px;}
+.searchlogo{width: 12px;height: 21px;background-image: url("images/search.png");background-repeat: no-repeat;display: block;float: right;padding: 1px 6px;background-position: 4px 3px;}
+/* <!-- 内容区 -->*/
+.conbox{width: 1100;height: auto;background: url("images/home_back_top.png");margin: 0 auto;}
+.conbox:after{width: 0px;height: 0px;clear:both;display: block;visibility: hidden; content: ""}
+.conleft{width: 534px;height: auto;padding-top: 50px;float: left;min-height: 450px;}
+.conlul1{display: block;}
+.conlli{width: 534px;height: 77px;padding-top: 10px;float: left;}
+.conlpic{width: 38px;height: 38px;display:block;float: left;background-image: url("images/corporate_icons.png");}
+.conlpic1{background-position: -68px -11px;}
+.conlpic2{background-position: -116px -11px;}
+.conlpic3{background-position: -308px -11px;}
+.conlpic4{background-position: -212px -11px;}
+.conltxt{display: block;float: left;height: 45px;width: 470px;padding: 0 0 0 20px;line-height: 25px;color: #777;font-size: 16px;font-family: Arial,sans-serif;}
+.conright{width: 485px;height: 301px;margin-left:80px;padding-top: 50px;float: left;}
+.conrtop{width: 478px;height: 43px;padding-left: 17px;}
+.consignin{width: 203px;height: 43px;margin-right: 6px;background-image: url("images/login-signup-buttons.png");background-position:-499px -14px;float: left;display: block; }
+.consignup{width: 203px;height: 43px;margin-right: 6px;background-image: url("images/login-signup-buttons.png");background-position: -13px -14px;float: left;}
+.conmore{height: 43px;width: 43px;background-image: url("images/login-signup-buttons.png");background-position: -430px -14px;float: left;}
+.conrbom{width: 478px;height: 207px;padding: 13px 0 0 17px;}
+.conrlogin{width: 478px;height: 207px;}
+.conrmes{width: 478px;height: 16px;margin: 11px 0 14px 0;}
+.loginmes{height: 12px;font-size: 13px;color: #AAAAAA;line-height: 14px;width: 202px;float: left;display: inline-block;}
+.loginlinkmes{height: 12px;font-size: 13px;color: #AAAAAA;line-height: 14px;float: right;display: block;width: 108px;}
+.loginname{width: 476px;height:46px;background-color: #fff;position: relative;border: 1px solid #cecece;border-radius: 5px;margin: 40px 0; }
+.loginnametip{position: absolute;font-size: 18px;height: 46px;color: #BBBBBB;line-height: 46px;left: 10px; }
+.logintxt{width: 476px;height: 46px;border: 0px;}
+.loginpwd{width: 476px;height:46px;background-color: #fff;position: relative;border: 1px solid #cecece;border-radius: 5px;position: relative;margin-bottom: 20px; }
+.loginpwdtip{position: absolute;font-size: 18px;height: 46px;color: #BBBBBB;line-height: 46px;left: 10px; }
+.loginpwdtxt{width: 476px;height: 46px;border: 0px;}
+.loginbtn{width: 80px;height: 38px;border: 1px solid #79A1C9;cursor: pointer;background-image: -webkit-linear-gradient(top, #90B9E4, #5A8BC5);border-radius: 2px;float: left;}
+.loginbtn{text-align: center;font-size: 15px;line-height: 38px;text-shadow: 0 -1px 0 rgba(1, 1, 1, 0.4);box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);color: #fff;font-weight: bold;}
+.checktxt{height: 46px;margin-left: 10px;float: left;}
+.checktxt span{height: 12px;font-size: 13px;color: #AAAAAA;line-height: 36px;}
+.checklinktxt{height: 12px;font-size: 13px;color: #AAAAAA;line-height: 36px;font-weight: bold;}
+.checkrem{width: 112px;height: 14px;float: right;margin-top: 14px;position: relative;}
+.logincheckbox{width: 13px;height: 13px;margin: 0px 5px 0 0;border: solid 1px #cecece;background-color: #f5f5f5;top: 1px;position: relative;}
+.checkrem span{height: 16px;font-size: 13px;color: #AAAAAA;line-height: 12px;display: inline-block;}
+.conmorebox{position: relative;width: auto;height: auto;}
+/*左边注册内容*/
+.conlul2{width: 534px;height: 540px;display: none;}
+.conl2li{width: 240px;height: 250px;padding: 0 20px 20px 0 ;float: left;}
+.conl2pic{width: 240px;height: 163px;margin-bottom: 12px;text-align: center;}
+.conl2img{width: 160px;height: 160px;margin-right: 20px;}
+.conl2title{width: 230px;height:19px;padding-right: 10px;text-align: center;font-size: 16px;color: #333333;display: block; }
+.conl2desc{width: 240px;padding-top: 10px;font-size: 14px;color: #888888;line-height: 23px;display: block;}
+
+
+/*右边注册区*/
+.signupname{margin-top: 20px;}
+.birthday{width: 476px;height: 36px;padding: 5px 0;margin-top: 20px;}
+.birthtxt{font-size: 16px;color: #333333;display: block;height: 19px;width: 90px;float: left;padding-right: 10px}
+.birthinput{width:376px;height: 25px;float: left; }
+.birthmon{border: 0px;width: 90px;height: 25px;float: left;}
+.birthyear{border: 0px;width: 120px;height: 25px;float: left;}
+
+/*注册more*/
+.commoredown{width: 194px;height: 245px;border: 1px solid #000;position: absolute;left: 263px;top: 43px;z-index: 30;background-color: #E9E9E9;display: none;}
+.comdowmul{width: 100%;height: 230px;padding: 5px 0;}
+.comdowmli{width: 100%;height: 27px;padding: 6px 0;border-bottom: 1px solid #ccc;}
+.comdowmpic{width: 24px;height: 24px;margin: 0 9px 0 17px;line-height: 39px;background: url("images/general_networking.png");float: left;}
+.comdowmtxt{width: 144px;float: right;height: 24px;line-height: 24px;color: #777;font-size: 16px;font-family: Arial,sans-serif;text-align: center; }
+.comdowmpic1{background-image: url("images/twieer.png"); }
+.comdowmpic2{background-position: 0 -553px;}
+.comdowmpic3{background-position: 0 -529px;}
+.comdowmpic4{background-position: 0 0px;}
+.comdowmpic5{background-position: 0 -505px;}
+.comdowmpic6{background-position: 0 -481px;}
+/*<!-- 版权区 -->*/
+.footer{width: 1100px;height: 51px;margin: 30px auto 0;}
+.footerleft{float: left;height: 51px;width: 450px}
+.footertxt1{height: 12px;line-height: 51px;color: #999999;}
+.footertxt2{height: 12px;line-height: 51px;color:#888888;font-weight: bold;}
+.footerright{float: right;width: 480px;height: 51px;float: right;}
+.footerul{width: 480px;height: 46px;}
+.footerli{float: left;display: block;}
+.footerpic{width: 18px;height: 18px;display: block;margin: 15px 0 0 5px}
+.footerlink{padding: 0 10px;line-height: 46px;color: #999999;}
+.footerpic1{background-image: url("images/login-signup-buttons.png");background-position: -14px -167px}
+.footerpic2{background-image: url("images/login-signup-buttons.png");background-position: -34px -167px}
+.footerpic3{background-image: url("images/login-signup-buttons.png");background-position: -54px -167px}
+.footerpic4{background-image: url("images/login-signup-buttons.png");background-position: -74px -167px}
