@@ -5,6 +5,13 @@ a{text-decoration: none;}
 
 
 body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
+@font-face{
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+
+}
 .header-bar{width: 100%;min-width: 1000px;height: 54px;background-color: #000;color: #6e6e6e;}
 .headleft{width:500px ;height: 54px;float: left;padding-left: 20px}
 .headlcon{height: 54px;width: 300px;margin-left: 20px;display: inline-block;float: left;}
@@ -15,7 +22,50 @@ body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
 .headrpic{background-image: url("images/themeforest-purchasethis-71f56a79736ebb0f4a4d6b7dacb7cf80.png");width: 270px;height: 52px;display: block;}
 
 /*<!-- 幻灯片 -->*/
-.slider{width: 100%;height: 500px;background-image: url("images/1.jpg");display: block;}
+.slider{width: 100%;height: 500px;display: block;}
+.slider1{width: 100%;height: 500px;position: relative;background-image: url("images/1.jpg");}
+.slider3{width: 100%;height: 500px;position: relative;background-image: url("images/3.jpg");display: none;}
+.slider2{width: 100%;height: 500px;position: relative;background-image: url("images/2.jpg");display: none;}
+.slid1title{position: absolute;font-size: 32px;line-height: 36px;color: #fff;left: 273px;height: 50px;font-weight: 300px;font-family: 'Roboto', sans-serif;top: -50px;display: block;}
+.slid1caption{position: absolute;font-size: 26px;color: #fff;font-family: 'Roboto', sans-serif;font-weight: 300;left: 545px;top:12000px}
+.slider1img1{position: absolute;left: -100px;top: 237px;}
+.slider1img2{position: absolute;left: 550px;top: -200px;}
+.slider1img3{position: absolute;left: 700px;top: -200px;}
+.slider1img4{position: absolute;left: 1500px;top: 237px;}
+.slider1txt{position: absolute;font-size: 14px;line-height: 18px;color: #fff;font-family: 'Roboto', sans-serif;font-weight: 300;text-align: center;display: block;}
+.slider1txt1{left:-100px;top: 340px;position: absolute;}
+.slider1txt2{left: 550px;top: 12000px;position: absolute;}
+.slider1txt3{left: 700px;top: 12000px;position: absolute;}
+.slider1txt4{left: 850px;top: 12000px;position: absolute;}
+
+.slid3title{position: absolute;font-size: 32px;line-height: 36px;color: #fff;left: 273px;height: 50px;font-weight: 300px;font-family: 'Roboto', sans-serif;top: -50px;display: block;}
+.slid3caption{position: absolute;font-size: 26px;color: #fff;font-family: 'Roboto', sans-serif;font-weight: 300;left: 1500px;top:150px}
+.slider3img{position: absolute;top: 12000px;left: 300px}
+
+
+.slider2pic{position: absolute;width: 342px;height: 452px;top: 1000px;left: 800px;}
+.slidermodle{width: 183px;height: 74px;padding: 20px 40px;position: absolute;font-size: 16px;font-family:  'Roboto',sans-serif;background-color: rgb(84,186,187);border-radius: 26px;color: #fff;}
+.slidermodle1{left: -300px;top: 50px}
+.slidermodle2{left: 400px;top: -500px}
+.slidermodle3{left: -300px;top: 250px}
+.slidermodle4{left: 400px;top:12000px}
+.slider2img1{font-size: 40px;color: #fff;font-family:"FontAwesome";text-align: center;height: 50px;width: 183px;}
+.slider2img1:before{content: "\f03a";}
+.slider2img2{font-size: 40px;color: #fff;font-family:"FontAwesome";text-align: center;height: 50px;width: 183px;}
+.slider2img2:before{content: "\f0f7";}
+.slider2img3{font-size: 40px;color: #fff;font-family:"FontAwesome";text-align: center;height: 50px;width: 183px;}
+.slider2img3:before{content: "\f11d";}
+.slider2img4{font-size: 40px;color: #fff;font-family:"FontAwesome";text-align: center;height: 50px;width: 183px;}
+.slider2img4:before{content: "\f109";}
+.slider2txt{width: 183px;text-align: center;}
+
+
+.sliderbtn{width: 61px;height: 61px;position: absolute;z-index: 100;background: rgba(0,0,0,0.3);cursor: pointer;color: #fff;font-size: 30px;font-weight: 300;line-height: 61px;text-align: center;font-family: "FontAwesome"}
+.prebtn:before{content: "\f104";}
+.prebtn{left: 0px;top: 300px;float:left;}
+.nextbtn:before{content: "\f105";}
+.nextbtn{left: 1290px;top: 300px;float: right;}
+
 /*<!-- 导航栏 -->*/
 .logoblock{width: 100%;height: 34px;padding: 15px 0 15px 0;border-bottom: 2px solid #041e34; }
 .logocontain{width: 1170px;height: 34px;margin: 0 auto;}
@@ -23,6 +73,37 @@ body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
 .logomenu{width: 550px;height: 34px;float: right;}
 .logomli{padding-right: 35px;height: 34px;line-height: 34px;float: left;}
 .logolilink{height: 20px;padding-bottom: 8px;color:#454545;font-size:18px;line-height: 20px;font-weight: bold;font-family: HelveticaNeueLTProRoman, sans-serif;letter-spacing: 1px;background-color: transparent!important;transition: all 0.2s ease-in;}
+
+
+
+/*<!-- Benefits -->*/
+.benefits{width: 100%;height: auto;background-color: #2D2D2D}
+.benebom{width: 100%;height: 434px;margin:0 0 0 85px}
+.benebleft{float: left;height: 100%;width: 570px;}
+.benbltitle{display: block;width: 100%;height: 27px;padding-bottom: 15px;color: #6d6d6d;font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif;text-transform: uppercase;font-size: 24px;line-height: 27px;}
+.benebldesc{display: block;font-size: 14px;color: #fff;line-height: 21px;}
+.benebright{width: 657px;height: 400px;margin-left: 35px;float: left;}
+.benepic{width: 657px;height: 400px;}
+
+
+/*<!-- 商品展示 -->*/
+.produceshow{width: 100%;height: 207px;position: relative;z-index: 0}
+.produce{width: 20%;height: 207px;display: block;float: left;}
+.proimg{height: 207px;}
+.promenzhao{width: 20%;height: 207px;position: absolute;background-color: #54babb;z-index: 10;}
+.promzbox{width: 100%;height: 123px;padding-top: 36px;}
+.promztitle{color: #fff;display: block;text-align: center;font-size: 24px;font-family: 'Roboto', sans-serif;font-weight: 300;line-height: 28px;}
+.promzdesc{color: #fff;font-size: 15px;font-family: 'Roboto', sans-serif;font-weight: 300;line-height: 20px;display: block;text-align: center;margin-bottom: 20px;}
+.prozoom{width: 63px;height: 63px;border:1px solid #fff;border-radius: 4px;text-align: center;display: inline-block;margin-left: 60px}
+.prolink{width: 63px;height: 63px;border:1px solid #fff;border-radius: 4px;text-align: center;display: inline-block;}
+.prozoom i{color: #fff;line-height: 63px;width: 63px }
+.prolink i{color: #fff;line-height: 63px;width:61px}
+.promenzhao1{left: 0px;top: 0px;display: none;}
+.promenzhao2{left: 20%;top: 0px;display: none;}
+.promenzhao3{left: 40%;top: 0px;display: none;}
+.promenzhao4{left: 60%;top: 0px;display: none;}
+.promenzhao5{left: 80%;top: 0px;display: none;}
+
 
 /*<!-- about cloud9 -->*/
 .about{width: 100%;height: 800px;background-color: #29343D}
@@ -35,12 +116,12 @@ body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
 .aboutteam{width: 270px;height: 475px;margin-left: 30px;float: left;}
 .aboutteam1{margin-left: 0px;}
 .abouttpic{width: 273px;height: 273px;background-position: center;background-repeat: no-repeat;border-radius: 50%;margin-bottom: 20px;display: block;background-size: cover;opacity:0.5;}
-.aboutttitle{width: 270px;height: 37px;padding-bottom: 10px;display: block;text-align: center;line-height: 37px;font-size: 28px;color: #52697a;text-transform: uppercase;font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif;}
+.aboutttitle{width: 270px;height: 37px;padding-bottom: 10px;display: none;text-align: center;line-height: 37px;font-size: 28px;color: #52697a;text-transform: uppercase;font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif;}
 .aboutdesc{width: 270px;height: 84px;color: #fff;font-size: 14px;text-align: center;display: block;line-height: 20px}
 .abouttpic1{background-image: url("images/about1.jpg");}
 .abouttpic2{background-image: url("images/about2.jpg");}
 .abouttpic3{background-image: url("images/about3.jpg");}
-.abouttpic4{background-image: url("images/about4.jpg");}
+.abouttpic4{background-image: url("images/about4.jpg");z-index: -5}
 .aboutbom{width: 220px;height: 35px;text-align: center;padding: 0px 0 0 80px;margin-top: 20px}
 .abouytspic{width: 35px;height: 35px;border-radius: 50%;background-color: #1c252c;margin-right: 8px;display: block;float: left;}
 .abouytspic1{background-image: url("images/tfb.png");background-repeat: no-repeat;background-position: center;}
@@ -88,5 +169,1983 @@ body{font-size: 12px;color: #6e6e6e;font-family: 'Droid Sans', sans-serif;}
   100% {
     opacity:1;
     -webkit-transform:  rotate(360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+/*幻灯片动画*/
+
+.slid1titleanimate{
+  animation: solidone ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidone ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidone ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidone ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidone ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidone{
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidone{
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidone {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidone {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidone {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:95px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+.slid1captioneanimate{
+  animation: solidtwo ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.2s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidtwo ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.2s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidtwo ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.2s
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidtwo ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.2s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidtwo ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.2s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidtwo{
+  0% {
+    left:545px;
+    top:800px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:172px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidtwo{
+  0% {
+    left:545px;
+    top:800px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:172px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidtwo {
+  0% {
+    left:545px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:172px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidtwo {
+  0% {
+    left:545px;
+    top:800px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:172px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidtwo {
+  0% {
+    left:545px;
+    top:800px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:172px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1img1animate{
+  animation: solidfour ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.4s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidfour ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidfour ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.4s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidfour ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.4s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidfour ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.4s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidfour{
+  0% {
+    left:-100px;
+    top:237px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:237px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidfour{
+  0% {
+    left:-100px;
+    top:237px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:237px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidfour {
+  0% {
+    left:-100px;
+    top:237px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:237px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidfour {
+  0% {
+    left:-100px;
+    top:237px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:237px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidfour {
+  0% {
+    left:-100px;
+    top:237px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:237px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1txt1animate{
+  animation: solidtxtone ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.6s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidtxtone ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.6s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidtxtone ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.6s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidtxtone ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.6s;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidtxtone ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.6s;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidtxtone{
+  0% {
+    left:400px;
+    top:400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:340px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidtxtone{
+  0% {
+    left:400px;
+    top:400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:340px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidtxtone {
+  0% {
+    left:400px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:340px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidtxtone {
+  0% {
+    left:400px;
+    top:400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:340px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidtxtone {
+  0% {
+    left:400px;
+    top:400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:340px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1img2animate{
+  animation: solidfive ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.8s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidfive ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.8s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidfive ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.8s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidfive ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.8s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidfive ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.8s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidfive{
+  0% {
+    left:550px;
+    top:-25px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:237px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidfive{
+  0% {
+    left:550px;
+    top:-25px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:237px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidfive {
+  0% {
+    left:550px;
+    top:-25px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:237px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidfive {
+  0% {
+    left:550px;
+    top:-25px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:237px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidfive {
+  0% {
+    left:550px;
+    top:-25px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:237px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1txt2animate{
+  animation: solidtxttwo ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.8s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidtxttwo ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.8s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidtxttwo ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.8s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidtxttwo ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.8s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidtxttwo ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.8s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidtxttwo{
+  0% {
+    left:550px;
+    top:400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:340px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidtxttwo{
+  0% {
+    left:550px;
+    top:400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:340px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidtxttwo {
+  0% {
+    left:550px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:340px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidtxttwo {
+  0% {
+    left:550px;
+    top:400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:340px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidtxttwo {
+  0% {
+    left:550px;
+    top:400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:550px;
+    top:340px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+.slider1img3animate{
+  animation: solidsix ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:1s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidsix ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:1s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidsix ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:1s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidsix ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:1s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidsix ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:1s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidsix{
+  0% {
+    left:700px;
+    top:-25px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:237px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidsix{
+  0% {
+    left:700px;
+    top:-25px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:237px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidsix {
+  0% {
+    left:700px;
+    top:-25px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:237px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidsix {
+  0% {
+    left:700px;
+    top:-25px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:237px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidsix {
+  0% {
+    left:700px;
+    top:-25px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:237px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1txt3animate{
+  animation: solidtxtthree ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:1.2s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidtxtthree ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:1.2s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidtxtthree ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:1.2s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidtxtthree ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:1.2s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidtxtthree ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:1.2s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidtxtthree{
+  0% {
+    left:700px;
+    top:400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:340px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidtxtthree{
+  0% {
+    left:700px;
+    top:400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:340px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidtxtthree {
+  0% {
+    left:700px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:340px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidtxtthree {
+  0% {
+    left:700px;
+    top:400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:340px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidtxtthree {
+  0% {
+    left:700px;
+    top:400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:700px;
+    top:340px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slider1img4animate{
+  animation: solidseven ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:1.4s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidseven ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:1.4s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidseven ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:1.4s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidseven ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:1.4s;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidseven ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:1.4s;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidseven{
+  0% {
+    left:1500px;
+    top:237px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:237px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidseven{
+  0% {
+    left:1500px;
+    top:237px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:237px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidseven {
+  0% {
+    left:1500px;
+    top:237px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:237px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidseven {
+  0% {
+    left:1500px;
+    top:237px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:237px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidseven {
+  0% {
+    left:1500px;
+    top:237px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:237px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+.slider1txt4animate{
+  animation: solidtxtfour ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:1.6s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidtxtfour ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:1.6s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidtxtfour ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:1.6s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidtxtfour ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:1.6s;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidtxtfour ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:1.6s;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidtxtfour{
+  0% {
+    left:850px;
+    top:400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:340px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidtxtfour{
+  0% {
+    left:850px;
+    top:400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:340px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidtxtfour {
+  0% {
+    left:850px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:340px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidtxtfour {
+  0% {
+    left:850px;
+    top:400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:340px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidseven {
+  0% {
+    left:850px;
+    top:400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:850px;
+    top:340px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+/*slider3*/
+.slid3titleanimate{
+  animation: solidTtitle ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidTtitle ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidTtitle ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidTtitle ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidTtitle ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidTtitle{
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidTtitle{
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidTtitle {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidTtitle {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:96px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidTtitle {
+  0% {
+    left:273px;
+    top:-25px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:273px;
+    top:95px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+.slid3captioneanimate{
+  animation: solidTcap ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.2s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidTcap ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.2s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidTcap ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.2s
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidTcap ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.2s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidTcap ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.2s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidTcap{
+  0% {
+    left:1500px;
+    top:150px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:150px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidTcap{
+  0% {
+    left:1500px;
+    top:150px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:150px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidTcap {
+  0% {
+    left:1500px;
+    top:150px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:150px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidTcap {
+  0% {
+    left:1500px;
+    top:150px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:150px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidTcap {
+  0% {
+    left:1500px;
+    top:150px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:545px;
+    top:150px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+.slider3imganimate{
+  animation: solidTimg ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.5s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidTimg ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidTimg ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.5s
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidTimg ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.5s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidTimg ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.5s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidTimg{
+  0% {
+    left:300px;
+    top:12000px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:300px;
+    top:200px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidTimg{
+  0% {
+    left:300px;
+    top:12000px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:300px;
+    top:200px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidTimg {
+  0% {
+    left:300px;
+    top:12000px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:300px;
+    top:200px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidTimg {
+  0% {
+    left:300px;
+    top:12000px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:300px;
+    top:200px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidTimg {
+  0% {
+    left:300px;
+    top:12000px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:300px;
+    top:200px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+.slider2picanimate{
+  animation: solidSpic ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidSpic ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidSpic ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidSpic ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidSpic ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidSpic{
+  0% {
+    left:800px;
+    top:400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:800px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidSpic{
+  0% {
+    left:800px;
+    top:400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:800px;
+    top:200px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidSpic {
+  0% {
+    left:800px;
+    top:400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:800px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidSpic {
+  0% {
+    left:800px;
+    top:400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:800px;
+    top:200px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidSpic {
+  0% {
+    left:800px;
+    top:400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:800px;
+    top:200px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+.slidermodle1animate{
+  animation: solidSmodone ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.2s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidSmodone ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.2s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidSmodone ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.2s
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidSmodone ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.2s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidSmodone ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.2s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidSmodone{
+  0% {
+    left:-100px;
+    top:50px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:50px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidSmodone{
+  0% {
+    left:-100px;
+    top:50px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:50px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidSmodone {
+  0% {
+    left:-100px;
+    top:50px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:50px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidSmodone {
+  0% {
+    left:-100px;
+    top:50px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:50px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidSmodone {
+  0% {
+    left:-100px;
+    top:50px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:50px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slidermodle2animate{
+  animation: solidSmodtwo ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.4s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidSmodtwo ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidSmodtwo ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.4s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidSmodtwo ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.4s;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidSmodtwo ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.4s;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidSmodtwo{
+  0% {
+    left:400px;
+    top:-400px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:50px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidSmodtwo{
+  0% {
+    left:400px;
+    top:-400px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:50px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidSmodtwo {
+  0% {
+    left:400px;
+    top:-400px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:50px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidSmodtwo {
+  0% {
+    left:400px;
+    top:-400px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:50px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidSmodtwo {
+  0% {
+    left:400px;
+    top:-400px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:50px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+.slidermodle3animate{
+  animation: solidSmodthree ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.6s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidSmodthree ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.6s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidSmodthree ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.6s
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidSmodthree ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.6s
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidSmodone ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.6s
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidSmodthree{
+  0% {
+    left:-100px;
+    top:250px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:250px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidSmodthree{
+  0% {
+    left:-100px;
+    top:250px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:250px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidSmodthree {
+  0% {
+    left:-100px;
+    top:250px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:250px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidSmodthree {
+  0% {
+    left:-100px;
+    top:250px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:250px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidSmodthree {
+  0% {
+    left:-100px;
+    top:250px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:100px;
+    top:250px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+.slidermodle4animate{
+  animation: solidSmodfour ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-delay:0.8s;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: solidSmodfour ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-delay:0.8s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: solidSmodfour ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-delay:0.8s;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: solidSmodfour ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-delay:0.8s;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: solidSmodfour ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-delay:0.8s;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes solidSmodfour{
+  0% {
+    left:400px;
+    top:12000px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:250px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes solidSmodfour{
+  0% {
+    left:400px;
+    top:12000px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:250px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes solidSmodfour {
+  0% {
+    left:400px;
+    top:12000px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:250px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes solidSmodfour {
+  0% {
+    left:400px;
+    top:12000px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:250px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes solidSmodfour {
+  0% {
+    left:400px;
+    top:12000px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:400px;
+    top:250px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+/*商品展示动画*/
+.prozoomanimation{
+  animation: prozoom linear 0.3s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards;
+  -webkit-animation: prozoom linear 0.3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+   -webkit-animation-fill-mode:forwards;
+  -moz-animation: prozoom linear 0.3s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards;
+  -o-animation: prozoom linear 0.3s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards;
+  -ms-animation: prozoom linear 0.3s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+   -ms-animation-fill-mode:forwards;
+}
+
+@keyframes prozoom{
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  25% {
+    transform:  scaleX(1.1) scaleY(1.1) ;
+  }
+  50% {
+    opacity:1;
+    transform:  scaleX(1.2) scaleY(1.2) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1.3) scaleY(1.3) ;
+  }
+}
+
+@-moz-keyframes prozoom{
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  25% {
+    -moz-transform:  scaleX(0.95) scaleY(0.95) ;
+  }
+  50% {
+    opacity:1;
+    -moz-transform:  scaleX(1.1) scaleY(1.1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(0.3) scaleY(0.3) ;
+  }
+}
+
+@-webkit-keyframes prozoom {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  25% {
+    opacity:1;
+  }
+   50% {
+    opacity:1;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1.1) scaleY(1.1) ;
+  }
+}
+
+@-o-keyframes prozoom {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  25% {
+    -o-transform:  scaleX(0.95) scaleY(0.95) ;
+  }
+  50% {
+    opacity:1;
+    -o-transform:  scaleX(1.1) scaleY(1.1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(0.3) scaleY(0.3) ;
+  }
+}
+
+@-ms-keyframes prozoom {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  25% {
+    -ms-transform:  scaleX(0.95) scaleY(0.95) ;
+  }
+  50% {
+    opacity:1;
+    -ms-transform:  scaleX(1.1) scaleY(1.1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(0.3) scaleY(0.3) ;
   }
 }
