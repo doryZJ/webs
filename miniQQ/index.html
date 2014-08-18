@@ -2,9 +2,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<title>迷你QQ</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
@@ -42,6 +43,7 @@
 		<div class="mainpanel">
 			<div class="mainpaneltop">
 				<span class="mainptoptilte">会话</span>
+				<a class="mainptopsearch"></a>
 			</div>
 			<div class="mainpanelmiddle">
 			<!-- 会话 -->
@@ -258,7 +260,34 @@
 					</ul>
 					<div class="taolunbot"></div>
 					
+			</div>
+			<!-- 搜索好友 -->
+			<div class="messageset searchfriends">
+				<div id="messtop">
+					<div id="messtshezhi">
+						<span>联系人</span>
+					</div>
+					<span id="messttxt">搜索</span>
 				</div>
+				<div  class="seafbottom">
+					<div class="seafbox">
+						<div class="seafboxcon">
+						<input class="seafinput" placeholder="搜索" />
+						</div>
+						<div class="seafbom">
+							<a href="" class="friendheadimg searchfriimg">
+								<img src="">
+							</a>
+							<div class="frienditem">
+								<span class="nickname" ></span>
+								<span class="msgtext"></span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+			</div>
 
 			 
 
@@ -383,6 +412,7 @@
 						<a >
 							<div class="mainpanelbottomicon mainpanelbottomicon02"></div>
 							<span class="mainpanelbottomtext">联系人</span>
+							
 						</a>
 					</li>
 					<li class="mainpanelbottomline  mainpanelbottomline3">
@@ -453,9 +483,13 @@
 				
 			</div>
 		</div>
-	
+		<!-- 最小化 -->
+		<div class="chatmin">
+			
+			
+		</div>
 	<!-- 对话框 -->
-	<!--  <div class="talkbox">
+	 <!-- <div class="talkbox">
 		<div class="talk">
 			<div class="talkboxtop">
 				<div class="talktopdropdowm">
@@ -465,6 +499,9 @@
 					<span class="talktopnntxt">
 					滄海遺珠
 					</span>
+				</div>
+				<div class="talktopmin">
+					<span class="talktopclosetxt">最小化</span>
 				</div>
 				<div class="talktopclose">
 					<span class="talktopclosetxt">关闭</span>
@@ -485,9 +522,9 @@
 					</div>			
 				</div>
 
-			</div> -->
+			</div>  -->
 			<!-- 底部 -->
-		<!-- 	<div class="talkboxbottom">
+			<!-- <div class="talkboxbottom">
 				<div class="talkbottombq">
 					<span class="talkboxbpic"></span>
 				</div>

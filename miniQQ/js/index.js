@@ -21,6 +21,8 @@ $(function(){
 	});
 	$(".mainpanelbottomline2").click(function(){
 		$(".mainptoptilte").html("联系人");
+		$(".mainptoptilte").addClass("mainptopsetilte");
+		$(".mainptopsearch").show();
 		$(".chatting").hide();
 		$(".find").hide();
 		$(".contact").show();
@@ -123,8 +125,49 @@ $(function(){
 		$(".taolunbot").show();
 		$(".taolunbot").css("background","#808080");
 	});
-	
-	
+	/*搜索联系人*/
+	/* var projects = [
+      {
+        value: "滄海遺珠",
+        label: "滄海遺珠",
+        desc: "世间女子，当如花木兰。",
+        icon: "css/images/headimg1.jpg"
+      },
+      {
+        value: "雪做的花冠",
+        label: "雪做的花冠",
+        desc: "你若盛开，清风自来～～",
+        icon: "css/images/headimg2.jpg"
+      },
+      {
+        value: "Ai莪9寵ωǒ",
+        label: "Ai莪9寵ωǒ",
+        desc: "不倾国，不倾城。",
+        icon: "css/images/headimg3.jpg"
+      }
+    ];
+	$(".seafinput").autocomplete({
+		 minLength: 0,
+      	source: projects,
+      focus: function( event, ui ) {
+        $( "#project" ).val( ui.item.label );
+        return false;
+      },
+      select: function( event, ui ) {
+        $( "#nickname" ).val( ui.item.label );
+        $( "#project-id" ).val( ui.item.value );
+        $( "#msgtext" ).html( ui.item.desc );
+        $( "#project-icon" ).attr( "src", "css/images/" + ui.item.icon );
+ 
+        return false;
+      }
+    })
+    .autocomplete( "instance" )._renderItem = function( ul, item ) {
+      return $( "<li>" )
+        .append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
+        .appendTo( ul );
+    };
+	});*/
 	/*发现*/
 	$(".tenxun").click(function(){
 
@@ -205,7 +248,9 @@ $(function(){
 	$(".friendInfo").click(function(){
 		var open=$(this).attr("isopen");
 		var friendid=$(this).attr("id");
-		// alert(friendid);
+		/* alert(friendid);*/
+		/*var suvid=friendid.substring(10);
+		alert(suvid);*/
 		var Talktop=Math.floor(Math.random()*100+10);
 		// alert(Talktop);
 		var Talkleft=Math.floor(Math.random()*200+400);
@@ -222,15 +267,18 @@ $(function(){
 		var headobj=$(this).find("a");
 			/*alert(headobj);*/
 		var headimg=headobj.css("background-image");
-
+		$("#chatmin"+friendid).remove();
 		/*alert(headimg);*/
 		
 		/*alert(nickname);*/
 		
 	/*	 talkbox*/
+		
+
 		html+='	<div class="talkbox" id=talkbox'+friendid+'>';
 		html+='		<div class="talk">';
 		html+='			<div class="talkboxtop">';
+		html+='				<div class="talltopfriendid">'+friendid+'</div>';
 		html+='				<div class="talktopdropdowm">';
 		html+='					<span class="talktopdropdowmpic"></span>';
 		html+='				</div>';
@@ -238,6 +286,9 @@ $(function(){
 		html+='					<span class="talktopnntxt">';
 		html+='					'+nickname+'';
 		html+='					</span>';
+		html+='				</div>';
+		html+='				<div class="talktopmin">';
+		html+='					<span class="talktopclosetxt">最小化</span>';
 		html+='				</div>';
 		html+='				<div class="talktopclose">';
 		html+='					<span close='+friendid+' class="talktopclosetxt" >关闭</span>';
@@ -419,15 +470,8 @@ $(function(){
 		});
 		$("#talkbox"+friendid).css({"top":Talktop+"px","left":Talkleft+"px"});
 		$(this).attr("isopen","true");
-		$(".talktopclosetxt").click(
-		function(){
-			var closeid=$(this).attr("close");
-			$("#"+closeid).attr("isopen","false");
-			$("#talkbox"+closeid).remove();
-
-		});
-		$(".talkbox").draggable({handle:".talkboxtop"});
 		
+		$(".talkbox").draggable({handle:".talkboxtop"});
 		
 		/*发送*/
 		$(".talkboxbsend").click(function(){
@@ -436,8 +480,11 @@ $(function(){
 			var hour=curtime.getHours();
 			var min=curtime.getMinutes();
 			var time=hour+":"+min;
-			var txt=$("#textarea").val();
-			var length=$("#textarea").val().length;
+			var thistxtarea=$(this).prev().find("#textarea");
+			var txt=$(this).prev().find("#textarea").val();
+			/*alert(txt);*/
+			/*var txt=$("#textarea").val();*/
+			var length=thistxtarea.val().length;
 			
 			/*alert(txt);*/
 			for (var i=0;i<length;i++) {
@@ -575,33 +622,15 @@ $(function(){
 			text+='						<p class="talkcltxt">'+txt+'</p>';
 			text+='					</div>';
 			text+='				</div>';
-			$(".talkboxmiddle").append(text);
+			/*alert(text);*/
+			var boxmiddle=$(this).parent().parent().find(".talkboxmiddle");
+			/*alert(boxmiddle);*/
+			boxmiddle.append(text);
+			/*$(".talkboxmiddle").append(text);*/
 			$(".talkclicon").css("background-image",""+headimg+"");
 			$(".talkboxmiddle").animate({scrollTop:5000},0);
 		});
-		$(".talkboxbpic").click(function(){
-			/*var scroll=$(".talkboxmiddle").scrollTop();
-			alert(scroll);*/
-			var view=$(".talkboxfaceimg").attr("view");
-			/*alert(view);*/
-			if (view=="no") {
-				$(".talkboxfaceimg").show();
-				$(".talkboxfaceimg").attr("view","yes");
-				$(".talk").css("height","206px");
-				$(".talkbox").css("height","206px");
-				$(".talkboxmiddle").css("height","116px");
-				$(".talkboxmiddle").animate({scrollTop:5000},0);
-				
-			}
-			else{
-				$(".talkboxfaceimg").hide();
-				$(".talkboxfaceimg").attr("view","no");
-				$(".talk").css("height","");
-				$(".talkbox").css("height","");
-				$(".talkboxmiddle").css("height","");
-			}
-
-	});
+		
 		/*<!-- talkbox底部 -->*/
 	$(".btnf1").click(
 		function(){
@@ -681,12 +710,13 @@ $(function(){
 	/*var facelen=4;*/
 	$(".facetxt").click(function(){
 		var facetxt=$(this).attr("txt");
-		var text=$("#textarea").val();
+		var nowtxtarea=$(this).parent().parent().parent().parent().prev().find("#textarea");
+		var text=nowtxtarea.val();
 		var all=text+facetxt;
 		var facelen=$(this).attr("txt").length;
 		/*alert(facelen);*/
 		/*alert(facetxt);*/
-		$("#textarea").val(all);
+		nowtxtarea.val(all);
 		
 	});
 	$(".del").click(function(){
@@ -703,5 +733,67 @@ $(function(){
 
 	});
 
-	
+	$(document).on("click",".talkboxbpic",function(){
+			/*var scroll=$(".talkboxmiddle").scrollTop();
+			alert(scroll);*/
+
+			var talkbox=$(this).parent().parent().parent().parent();
+			var talk=$(this).parent().parent().parent();
+			var bqpic=$(this).parent().parent().parent().next();
+			var talkmiddle=$(this).parent().parent().prev();
+			var view=bqpic.attr("view");
+			/*alert("d");*/
+			/*alert(view);*/
+			if (view=="no") {
+				bqpic.show();
+				bqpic.attr("view","yes");
+				talk.css("height","206px");
+				talkbox.css("height","206px");
+				talkmiddle.css("height","116px");
+				talkmiddle.animate({scrollTop:5000},0);
+				
+			}
+			else{
+				bqpic.hide();
+				bqpic.attr("view","no");
+				talk.css("height","");
+				talkbox.css("height","");
+				talkmiddle.css("height","");
+			}
+
+	});
+	/*最小化*/
+		$(document).on("click",".talktopmin",function(){
+			var friendminid=$(this).parent().find(".talltopfriendid").html();
+			/*alert(friendminid);*/
+			var addhtml="";
+			var minfridendid=friendminid.substring(11);
+			var minimg="friendheadimg"+minfridendid;
+			addhtml+='<div class="chatminpic '+minimg+'" id="chatmin'+friendminid+'">';
+			addhtml+=' <div class="chatminid">'
+			addhtml+='0'+minfridendid+'';
+			addhtml+='	</div>'
+			addhtml+='</div>';
+			$(".chatmin").append(addhtml);
+			$(this).parent().parent().parent().hide();
+			$("#"+friendminid).attr("isopen","false");
+		});
+
+		/*最小化变成最大化*/
+		$(document).on("click",".chatminpic",function(){
+			var max=$(this).find(".chatminid").html();
+			/*alert("#talkboxfriendInfo"+max);*/
+			$("#talkboxfriendInfo"+max).show();
+			$("#chatminfriendInfo"+max).remove();
+		});
+		/*关闭*/
+		$(document).on("click",".talktopclosetxt",function(){
+			var closeid=$(this).attr("close");
+			/*alert(closeid);*/
+			$("#"+closeid).attr("isopen","false");
+			$("#talkbox"+closeid).remove();
+			/*alert("#chatmin"+closeid);*/
+			$("#chatmin"+closeid).remove();
+
+		});
 });

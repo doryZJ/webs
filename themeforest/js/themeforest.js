@@ -1,6 +1,10 @@
 $(function(){
+	
+
+	
+
 	/*alert("s");*/
-	/*$(".abouttpic").hover(function(){
+	$(".abouttpic").hover(function(){
 		
 		$(this).animate({opacity:"1",},500);
 	},function(){
@@ -21,9 +25,9 @@ $(function(){
 	},function(){
 
 		$(this).removeClass("footbomanimate");
-	});*/
+	});
 	/*幻灯片*/
-	/*$(".slid1title").addClass("slid1titleanimate");
+	$(".slid1title").addClass("slid1titleanimate");
 	$(".slid1caption").addClass("slid1captioneanimate");
 	$(".slider1img1").addClass("slider1img1animate");
 	$(".slider1txt1").addClass("slider1txt1animate");
@@ -42,26 +46,77 @@ $(function(){
 	$(".slidermodle3").addClass("slidermodle3animate");
 	$(".slidermodle4").addClass("slidermodle4animate");
 	$(".prebtn").click(function(){
-		clearInterval(video);
+		/*clearInterval(video);*/
 		index=index-1;
 		if (index==0) {
 			index=3;
 		}
-		$(".sliderall").hide();
-		$(".slider"+index).show();
+		/*alert(index);*/
+		/*$(".sliderall").hide();
+		$(".slider"+index).show();*/
+		$(".slid1title").addClass("slid1titleanimate");
+		$(".slid1caption").addClass("slid1captioneanimate");
+		$(".slider1img1").addClass("slider1img1animate");
+		$(".slider1txt1").addClass("slider1txt1animate");
+		$(".slider1img2").addClass("slider1img2animate");
+		$(".slider1txt2").addClass("slider1txt2animate");
+		$(".slider1img3").addClass("slider1img3animate");
+		$(".slider1txt3").addClass("slider1txt3animate");
+		$(".slider1img4").addClass("slider1img4animate");
+		$(".slider1txt4").addClass("slider1txt4animate");
+		$(".slid3title").addClass("slid3titleanimate");
+		$(".slid3caption").addClass("slid3captioneanimate");
+		$(".slider3img").addClass("slider3imganimate");
+		$(".slider2pic").addClass("slider2picanimate");
+		$(".slidermodle1").addClass("slidermodle1animate");
+		$(".slidermodle2").addClass("slidermodle2animate");
+		$(".slidermodle3").addClass("slidermodle3animate");
+		$(".slidermodle4").addClass("slidermodle4animate");
+		setInterval("huandengpian()",15000);
+		
 	});
 	$(".nextbtn").click(function(){
-		clearInterval(video);
+		/*clearInterval(video);*/
+		/*alert(index);*/
 		index=index+1;
-		if(index==4)
+		if(index==4 || index==5)
 		{
 			index=1;
 		}
-		$(".sliderall").hide();
-		$(".slider"+index).show();
-	});*/
-	/*video=setInterval("huandengpian()",2000);*/
+		
+		/*$(".sliderall").hide();
+		$(".slider"+index).show();*/
+		$(".slid1title").addClass("slid1titleanimate");
+		$(".slid1caption").addClass("slid1captioneanimate");
+		$(".slider1img1").addClass("slider1img1animate");
+		$(".slider1txt1").addClass("slider1txt1animate");
+		$(".slider1img2").addClass("slider1img2animate");
+		$(".slider1txt2").addClass("slider1txt2animate");
+		$(".slider1img3").addClass("slider1img3animate");
+		$(".slider1txt3").addClass("slider1txt3animate");
+		$(".slider1img4").addClass("slider1img4animate");
+		$(".slider1txt4").addClass("slider1txt4animate");
+		$(".slid3title").addClass("slid3titleanimate");
+		$(".slid3caption").addClass("slid3captioneanimate");
+		$(".slider3img").addClass("slider3imganimate");
+		$(".slider2pic").addClass("slider2picanimate");
+		$(".slidermodle1").addClass("slidermodle1animate");
+		$(".slidermodle2").addClass("slidermodle2animate");
+		$(".slidermodle3").addClass("slidermodle3animate");
+		$(".slidermodle4").addClass("slidermodle4animate");
+		setInterval("huandengpian()",15000);
+	});
+	setInterval("huandengpian()",3000);
+/*<!-- Benefits -->*/
 
+	window.onscroll=function(){
+		if (document.body.scrollTop>290) {
+			/*alert("d");*/
+			$(".benebright").addClass("benebrightanimate");
+		
+		}
+	}
+	
 	/*商品展示*/
 	$(".prozoom").hover(function(){
 		$(this).addClass("prozoomanimation");
@@ -117,6 +172,32 @@ $(function(){
 	$(".produce5").mouseout(function(){
 		$(".promenzhao5").hide();
 	});
+	/*<!-- features -->*/
+	
+	$(".featitemv1").hover(function(){
+		$(this).stop();
+		$(this).animate({backgroundPositionY:"-8844px"},30000);
+	},function(){
+		$(this).stop();
+		$(this).animate({backgroundPositionY:"0px"},15000);
+	});
+	$(".featitemv2").hover(function(){
+		$(this).stop();
+		$(this).animate({backgroundPositionY:"-8844px"},30000);
+	},function(){
+		$(this).stop();
+		$(this).animate({backgroundPositionY:"0px"},15000);
+	});
+	$(".feataddli").hover(function(){
+		$(this).css("background-color","#333333");
+	},function(){
+		$(this).css("background-color","");
+	});
+	$(".feataddreadmore").hover(function(){
+		$(this).css("background-color","#49C35D");
+	},function(){
+		$(this).css("background-color","");
+	});
 	
 	
 	
@@ -132,24 +213,5 @@ function huandengpian(){
 	$(".sliderall").hide();
 	$(".slider"+index).show();	
 	index++;
-	
-	/*$(".slid1title").addClass("slid1titleanimate");
-	$(".slid1caption").addClass("slid1captioneanimate");
-	$(".slider1img1").addClass("slider1img1animate");
-	$(".slider1txt1").addClass("slider1txt1animate");
-	$(".slider1img2").addClass("slider1img2animate");
-	$(".slider1txt2").addClass("slider1txt2animate");
-	$(".slider1img3").addClass("slider1img3animate");
-	$(".slider1txt3").addClass("slider1txt3animate");
-	$(".slider1img4").addClass("slider1img4animate");
-	$(".slider1txt4").addClass("slider1txt4animate");
-	$(".slid3title").addClass("slid3titleanimate");
-	$(".slid3caption").addClass("slid3captioneanimate");
-	$(".slider3img").addClass("slider3imganimate");
-	$(".slider2pic").addClass("slider3imganimate");
-	$(".slidermodle1").addClass("slidermodle1animate");
-	$(".slidermodle2").addClass("slidermodle2animate");
-	$(".slidermodle3").addClass("slidermodle3animate");
-	$(".slidermodle4").addClass("slidermodle4animate");*/
 
 }

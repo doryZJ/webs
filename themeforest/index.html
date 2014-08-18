@@ -6,51 +6,56 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/themeforest.css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
 	<script type="text/javascript" src="js/themeforest.js"></script>
 </head>
 <body>
+	<!-- fixed区 -->
+	<div class="topfixed">
 	<!-- 顶部 -->
-	<div class="header-bar">
-		<div class="headleft">
-			<a href="" class="headlpic"></a>
-			<div class="headlcon">
-				<a href="" class="headllink">Remove Frame</a>
-				<span class="headline">|</span>
-				<a href="" class="headllink">Purchase this Item!</a>
+		<div class="header-bar">
+			<div class="headleft">
+				<a href="" class="headlpic"></a>
+				<div class="headlcon">
+					<a href="" class="headllink">Remove Frame</a>
+					<span class="headline">|</span>
+					<a href="" class="headllink">Purchase this Item!</a>
+				</div>
+			</div>
+			<div class="headright">
+				<a href="" class="headrpic"></a>
 			</div>
 		</div>
-		<div class="headright">
-			<a href="" class="headrpic"></a>
-		</div>
-	</div>
 	<!-- 导航栏 -->
-	<div class="logoblock">
-		<div class="logocontain">
-			<a class="logopic">
-				<img src="images/logo.png" class="logoimg">
-			</a>
-			<ul class="logomenu">
-				<li class="logomli">
-					<a href="" class="logolilink">Home</a>
-				</li>
-				<li class="logomli">
-					<a href="" class="logolilink">Benefits</a>
-				</li>
-				<li class="logomli">
-					<a href="" class="logolilink">About</a>
-				</li>
-				<li class="logomli">
-					<a href="" class="logolilink">Features</a>
-				</li>
-				<li class="logomli">
-					<a href="" class="logolilink">Contact</a>
-				</li>
-			</ul>
+		<div class="logoblock">
+			<div class="logocontain">
+				<a class="logopic">
+					<img src="images/logo.png" class="logoimg">
+				</a>
+				<ul class="logomenu">
+					<li class="logomli">
+						<a href="#home" class="logolilink logolilinkHome">Home</a>
+					</li>
+					<li class="logomli">
+						<a href="#dirbenefits" class="logolilink logolilinkBenefits" >Benefits</a>
+					</li>
+					<li class="logomli">
+						<a href="#about" class="logolilink logolilinkAbout">About</a>
+					</li>
+					<li class="logomli">
+						<a href="#features" class="logolilink logolilinkFeatures">Features</a>
+					</li>
+					<li class="logomli">
+						<a href="#footer" class="logolilink logolilinkContact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			
 		</div>
-		
 	</div>
+
 	<!-- 幻灯片 -->
-	<div class="slider">
+	<div class="slider" id="home" >
 		<div class="sliderall slider1">
 			<div class="slid1title">Creative Multipurpose html Template for your 
 			<span>Company</span>
@@ -130,8 +135,8 @@
 		<div class="sliderbtn nextbtn"></div>
 	</div>
 	<!-- Benefits -->
-	<div class="benefits">
-		<div class="abouttitle">
+	<div class="benefits" id="dirbenefits">
+		<div class="abouttitle" >
 			<div class="aboutle"></div>
 			<div class="aboutmi">
 				CMS DEMO
@@ -155,9 +160,8 @@
 				<img src="images/cms.png" class="benepic">
 			</div>
 		</div>
-	</div>
-	<!-- 商品展示 -->
-	<div class="produceshow">
+		<!-- 商品展示 -->
+	<div class="produceshow" >
 		<div class="produce produce1">
 			<img src="images/image1.jpg" class="proimg proimg1">
 			<div class="promenzhao promenzhao1">
@@ -246,9 +250,11 @@
 			</div>
 		</div> -->
 	</div>
+	</div>
+	
 	<!-- about cloud9 -->
-	<div class="about">
-		<div class="abouttitle">
+	<div class="about" >
+		<div class="abouttitle" id="about" >
 			<div class="aboutle"></div>
 			<div class="aboutmi">
 				ABOUT
@@ -321,10 +327,90 @@
 		</ul>
 	</div>
 	<!-- features -->
-	<div class="features"></div>
+	<div class="features"  >
+		<div class="abouttitle" id="features">
+			<div class="aboutle"></div>
+			<div class="aboutmi">
+				FEATURES
+				<sup class="aboutsup">cloud 9</sup>
+			</div>
+			<div class="aboutri"></div>
+		</div>
+		<div class="featurebom">
+			<div class="featurebleft">
+				<a href="" class="featitemv1"></a>
+				<a href="" class="featitemv1txt">Ascend version - 1</a>
+			</div>
+			
+			<div class="featurebright">
+				<a href=""  class="featitemv2"></a>
+				<a href="" class="featitemv2txt">Ascend version - 2</a>
+			</div>
+
+		</div>
+
+		<div class="featadd">
+			<ul class="feataddul">
+				<li class="feataddli">
+					<div class="feataddtitle">
+						<i class="feataddticon"></i>
+						<span class="feataddttxt">Flexible Grid</span>
+					</div>
+					<p class="feataddcon">
+						Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</p>
+					<div class="feataddreadmore">
+						<i class="featarmicon"></i>
+						<span class="featarmtxt">Read More</span>
+					</div>
+				</li>
+				<li class="feataddli feataddlitwo">
+					<div class="feataddtitle">
+						<i class="feataddticon feataddticontwo"></i>
+						<span class="feataddttxt">Retina Ready </span>
+					</div>
+					<p class="feataddcon">
+						Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</p>
+					<div class="feataddreadmore feataddreadmoretwo">
+						<i class="featarmicon"></i>
+						<span class="featarmtxt">Read More</span>
+					</div>
+				</li>
+				<li class="feataddli">
+					<div class="feataddtitle">
+						<i class="feataddticon feataddticonthree"></i>
+						<span class="feataddttxt">Responsive</span>
+					</div>
+					<p class="feataddcon">
+						Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</p>
+					<div class="feataddreadmore">
+						<i class="featarmicon"></i>
+						<span class="featarmtxt">Read More</span>
+					</div>
+				</li>
+				<li class="feataddli">
+					<div class="feataddtitle">
+						<i class="feataddticon feataddticonfour"></i>
+						<span class="feataddttxt">HTML 5 / CSS 3</span>
+					</div>
+					<p class="feataddcon">
+						Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</p>
+					<div class="feataddreadmore">
+						<i class="featarmicon"></i>
+						<span class="featarmtxt">Read More</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	
 	<!-- 底端 -->
-	<div class="footer">
-		<div class="footwarp">
+	<div class="footer"  >
+		<div class="footwarp" id="footer">
 			<div class="foottop">
 				<div class="footerone">
 					<div class="footonetop">
