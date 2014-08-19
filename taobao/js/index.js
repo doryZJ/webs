@@ -1,0 +1,55 @@
+$(function(){
+	$(".headerlidowm").hover(function(){
+		$(this).css("background-color","#fff");
+		$(this).find(".detailmes").show();
+	},function(){
+		$(this).css("background-color","");
+		$(this).find(".detailmes").hide();
+	});
+	$(".dhmiddleliaccount").hover(function(){
+		$(".dhsetcount").slideDown(500);
+		return false;
+	},function(){
+		$(".dhsetcount").slideUp(500);
+	});
+	/*所有订单*/
+	$(".maintli1").hover(function(){
+		$(".maintline").animate({left:"0"},300);
+	},function(){
+		/*$(".maintline").animate({left:"0"},300);*/
+	});
+	$(".maintli2").hover(function(){
+		$(".maintline").animate({left:"109px"},300);
+	},function(){
+		/*$(".maintline").animate({left:"0"},300);*/
+	});
+	$(".maintli3").hover(function(){
+		$(".maintline").animate({left:"218px"},300);
+	},function(){
+		/*$(".maintline").animate({left:"0"},300);*/
+	});
+	$(".maintli4").hover(function(){
+		$(".maintline").animate({left:"327px"},300);
+	},function(){
+		/*$(".maintline").animate({left:"0"},300);*/
+	});
+	$(".maintli5").hover(function(){
+		$(".maintline").animate({left:"436px"},300);
+	},function(){
+		/*$(".maintline").animate({left:"0"},300);*/
+	});
+	$(".maintli6").hover(function(){
+		$(".maintline").animate({left:"772px"},300);
+	},function(){
+	/*	$(".maintline").animate({left:"0"},300);*/
+	});
+	/*<!-- 商品区 -->*/
+	$(".probo").hover(function(){
+		$(this).find(".probopre").show();
+		$(this).find(".probonext").show();
+	},function(){
+		$(this).find(".probopre").hide();
+		$(this).find(".probonext").hide();
+	});
+	
+});
