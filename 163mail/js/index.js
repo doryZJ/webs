@@ -1,4 +1,18 @@
 $(function(){
+	/*删除*/
+	$(".conreceblchicon").click(function(){
+		/*var check=$(this).attr("ischeck");*/
+		alert("check");
+		/*if (check=="no") {
+			$(this).css("background-image","url('css/images/icon24.png')");
+			$(this).attr("ischeck","yes");
+		}
+		else{
+			$(this).css("background-image","url('css/images/icon2.png')");
+			$(this).attr("ischeck","no");
+		}*/
+		
+	});
 	/*收件箱*/
 	$(".headerblifour").click(function(){
 		$(".consyright").hide();
